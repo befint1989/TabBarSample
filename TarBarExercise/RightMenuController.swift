@@ -1,31 +1,33 @@
 //
-//  FirstViewController.swift
-//  TarBarExercise
+//  RightMenuController.swift
+//  TabBarSample
 //
-//  Created by 李宗育 on 2016/8/16.
+//  Created by 李宗育 on 2016/7/22.
 //  Copyright © 2016年 李宗育. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
-class FirstViewController: UIViewController {
-
-    @IBOutlet weak var first_title: UILabel!
+class RightMenuController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print("RightMenuController viewDidLoad")
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated:Bool) {
+        
         super.viewWillAppear(animated)
-        first_title.text = "資料載入中"
+        
+        print("RightMenuController viewWillAppear")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
-
