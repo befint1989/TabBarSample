@@ -5,9 +5,27 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="mCa-CQ-ULa">
+            <objects>
+                <navigationController id="33l-60-SDE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZNY-wm-GQ6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pyW-Yg-Zym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="PQq-P0-FRs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5R-I2-rb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-368"/>
+        </scene>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="TarBarExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -40,13 +58,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="Qbh-li-btJ">
+                        <barButtonItem key="rightBarButtonItem" title="更多" id="xHD-Ia-Xr5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="first_title" destination="KQZ-1w-vlD" id="9ev-GX-9vP"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1276" y="-368"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -165,7 +185,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="33l-60-SDE" kind="relationship" relationship="viewControllers" id="pVb-vJ-ILz"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
